@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="brandingImageView" fitHeight="200.0" fitWidth="200.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/pill.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="30.0" layoutY="229.0" prefHeight="154.0" prefWidth="144.0" text="Pill" textAlignment="CENTER" textFill="#ffd966">
+               <font>
+                  <Font size="96.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: #ffd966;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="usernameTextField" layoutX="113.0" layoutY="86.0" prefHeight="26.0" prefWidth="173.0" promptText="Username" />
+            <PasswordField fx:id="enterPasswordField" layoutX="113.0" layoutY="149.0" prefHeight="26.0" prefWidth="173.0" promptText="Password" />
+            <Button fx:id="cancelButton" layoutX="63.0" layoutY="287.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="48.0" prefWidth="271.0" style="-fx-background-color: lightblue;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="loginButton" layoutX="63.0" layoutY="213.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="48.0" prefWidth="271.0" style="-fx-background-color: lightblue;" text="Log In" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Label fx:id="loginMessageLabel" layoutX="63.0" layoutY="187.0" prefHeight="26.0" prefWidth="273.0" textFill="RED">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="registerButton" layoutX="164.0" layoutY="349.0" mnemonicParsing="false" onAction="#registerButtonOnAction" style="-fx-background-color: lightblue;" text="Register" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
